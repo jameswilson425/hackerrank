@@ -1,4 +1,3 @@
-# migratory birds
 def kangaroo(x1, v1, x2, v2)
   k1 = x1
   k2 = x2
@@ -126,3 +125,5 @@ def birthday(s, d, m)
 end
 
 birthday([1, 2, 1, 3, 2], 3, 2)
+
+# migratory birds thread = last ruby
