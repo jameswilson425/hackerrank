@@ -103,3 +103,26 @@ def breakingRecords(scores)
 end
 
 breakingRecords([3, 4, 21, 36, 10, 28, 35, 5, 24, 42])
+
+# Loop that prints each number in the array
+# Loop through and add two numbers at a time using index and index + 1
+# Conditional that says if index and index + 1 is equal to the day, add 1 to a counter
+def birthday(s, d, m)
+  i = 0
+  counter = 0
+  while i <= s.length - m
+    i2 = i
+    sum = 0
+    m.times do
+      sum += s[i2]
+      i2 += 1
+    end
+    if sum == d
+      counter += 1
+    end
+    i += 1
+  end
+  p counter
+end
+
+birthday([1, 2, 1, 3, 2], 3, 2)
