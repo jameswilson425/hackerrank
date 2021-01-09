@@ -151,3 +151,42 @@ def time_conversion(s)
 end
 
 time_conversion("06:05:45PM")
+
+# Will need a nested loop with two indexes to ensre 1 is ahead of the other
+# Build a counter to keep the numbers of pairs divisible by ‘k’
+# sort the array first form lowest to highest (.sort)
+# index 1 starts at zero
+# Create a while loop index 1 < length - 1
+# index 2 start at index1 + 1
+# loop and print each integer
+# create 2d loop index2 <= length
+# add integer at index1 to intger at index2
+# print sum
+# conditional if the sum / k % 0 then we add one to the established ‘counter’
+# add one to index 2
+# index1 + 1
+#  p counter
+# n = integer length of array
+# ar = array of integers
+# k = integer
+def divisibleSumPairs(n, k, ar)
+  ar.sort!
+  index1 = 0
+  counter = 0
+  while index1 < n - 1
+    index2 = index1 + 1
+    sum = 0
+    while index2 < n
+      sum = ar[index1] + ar[index2]
+      # p sum
+      if sum % k == 0
+        counter += 1
+      end
+      index2 += 1
+    end
+    index1 += 1
+  end
+  p counter
+end
+
+divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2])
