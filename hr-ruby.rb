@@ -125,5 +125,3 @@ def birthday(s, d, m)
 end
 
 birthday([1, 2, 1, 3, 2], 3, 2)
-
-# migratory birds thread = last ruby
