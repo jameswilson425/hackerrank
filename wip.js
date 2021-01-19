@@ -39,5 +39,5 @@ console.log(countingValleys(8, “UDDDUDUU”));
 //       }
 //   }
 //   return traversedValleys;
-}
+// }
 
