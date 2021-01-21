@@ -13,6 +13,9 @@
 //   return traversedValleys;
 // }
 
+
+// OG CODE FROM WEB
+
 // var longestCommonPrefix = function(strs) {
 //   let prefix = ""
 //   if(strs === null || strs.length === 0) return prefix
@@ -31,6 +34,8 @@
 // };
 
 // console.log(longestCommonPrefix(["flower", "flow", "flight"]));
+
+// MY REFACTOR OF OG CODE
 
 var longestCommonPrefix = function(strs) {
   var prefix = "";
