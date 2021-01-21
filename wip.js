@@ -40,6 +40,7 @@
 var longestCommonPrefix = function(strs) {
   var prefix = "";
   var i = 0;
+  // if(strs === null || strs.length === 0) return prefix
 
   while (i < strs[0].length) {
     var characters = strs[0][i];
@@ -58,7 +59,7 @@ var longestCommonPrefix = function(strs) {
 
 };
 
-console.log(longestCommonPrefix(["dog","racecar","car"]));
+console.log(longestCommonPrefix(["flower", "flow", "flight"]));
 
 // GROUP CODE
 
