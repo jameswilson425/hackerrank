@@ -35,6 +35,8 @@
 
 // console.log(longestCommonPrefix(["flower", "flow", "flight"]));
 
+// https://dev.to/urfan/leetcode-longest-common-prefix-with-javascript-32ca
+
 // MY REFACTOR OF OG CODE
 
 var longestCommonPrefix = function(strs) {
