@@ -59,3 +59,35 @@ var longestCommonPrefix = function(strs) {
 };
 
 console.log(longestCommonPrefix(["flower", "flow", "flight"]));
+
+// GROUP CODE
+
+// Loop through array and print each word
+// loop through each word and print the first couple letters
+// set conditional to determine whether the first letter of each word is the same
+  // if they are, push first letter of a word into empty string
+  // if not, stop the loop
+  // function longestCommonPrefix(strs) {
+  //   var i = 0;
+  //   var wordIndex = 0;
+  //   var loopCondition = true;
+  //   var longestCommonPrefixAnswer = “”;
+  //   while (i < strs.length) {
+  //     while (loopCondition) {
+  //       if (strs[i][wordIndex] === strs[i + 1][wordIndex]) {
+  //         longestCommonPrefixAnswer += strs[i][wordIndex];
+  //         wordIndex += 1;
+  //       }
+  //       else {
+  //         var popOff = strs[i].length - wordIndex;
+  //         longestCommonPrefixAnswer = longestCommonPrefixAnswer.slice(0, popOff);
+  //         loopCondition = false;
+  //       }
+  //     }
+  //     i += 1;
+  //     wordIndex = 0;
+  //     loopCondition = false;
+  //   }
+  //   return longestCommonPrefixAnswer;
+  // };
+  // console.log(longestCommonPrefix([“flower”,“flow”,“flight”, “flour”, “flopped”]));
