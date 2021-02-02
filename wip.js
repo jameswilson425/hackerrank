@@ -94,3 +94,28 @@ console.log(longestCommonPrefix(["flower", "flow", "flight"]));
   //   return longestCommonPrefixAnswer;
   // };
   // console.log(longestCommonPrefix([“flower”,“flow”,“flight”, “flour”, “flopped”]));
+
+
+
+  // UTOPIAN TREE
+
+  // Write a method that takes in an integer
+  // Set height to 1 and i to 0
+  // Create a function that either increases by 1 or doubles height per growth period
+
+
+function utopianTree(n) {
+  var h = 1;
+  var i = 0;
+
+  while (i <= n) { 
+    if (i % 2 !== 0) {
+      h *= 2;
+    } else {
+      h += 1;
+    }
+  }
+  i += 1;
+}
+
+console.log();
