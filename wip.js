@@ -135,3 +135,18 @@ function utopianTree(n) {
   }
   return h
 }
+
+// THIS WORKS BUT HACKERRANK DOESNT LIKE IT
+// function utopianTree(n) {
+//   var h = 1;
+//   for (let i = 0; i < n.length; i++) {
+//     const time = n[i];
+//     if (time % 2 !== 0) {
+//       h *= 2;
+//       console.log(h);
+//     } else {
+//       h += 1;
+//       console.log(h);
+//     }
+//   }
+// }
