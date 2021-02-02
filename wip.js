@@ -119,3 +119,19 @@ function utopianTree(n) {
 }
 
 console.log();
+
+//
+
+function utopianTree(n) {
+  var index = 0
+  var h = 1;
+  while (index < n.length) {
+    if (n[index] % 2 !== 0) {
+      h *= 2;
+    } else {
+      h += 1;
+    }
+    index += 1;
+  }
+  return h
+}
