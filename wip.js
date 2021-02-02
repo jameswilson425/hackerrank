@@ -150,3 +150,21 @@ function utopianTree(n) {
 //     }
 //   }
 // }
+
+// THIS AlSO WORKS BUT HACKERRANK DOESNT LIKE IT
+function utopianTree(n) {
+  var h = 1;
+  var output = [];
+  for (let i = 0; i < n.length; i++) {
+    const time = n[i];
+    if (time % 2 !== 0) {
+      h *= 2;
+      output.push(h);
+    } else {
+      h += 1;
+      output.push(h);
+    }
+  }
+  return output;
+}
+utopianTree([0, 1, 4]);
